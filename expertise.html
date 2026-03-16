@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expertise | Anania Sileshi</title>
+    <meta name="description" content="Expertise and services by Anania Sileshi - Full Stack Developer">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="particles-js"></div>
+    <canvas id="three-canvas"></canvas>
+    <div class="matrix-rain"></div>
+    <div class="cyber-grid"></div>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo holographic">AS</div>
+            <div class="loader-text">INITIALIZING EXCELLENCE</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header id="header">
+                <a href="index.html" class="logo">Anania Sileshi</a>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </header>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <section class="expertise" id="expertise">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>INNOVATION & EXPERTISE</h2>
+                        <p>Where cutting-edge technology meets artisanal excellence</p>
+                    </div>
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="expertise-title">FRONTEND MASTERY</h3>
+                            <p class="expertise-description">
+                                Creating immersive user interfaces with React, Vue, and modern CSS frameworks. 
+                                Expertise in responsive design and performance optimization.
+                            </p>
+                        </div>
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="expertise-title">BACKEND ARCHITECTURE</h3>
+                            <p class="expertise-description">
+                                Designing scalable server architectures with Node.js, Python, and cloud services. 
+                                Specializing in microservices and API development.
+                            </p>
+                        </div>
+                        <div class="expertise-card">
+                            <div class="expertise-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="expertise-title">SECURITY & OPTIMIZATION</h3>
+                            <p class="expertise-description">
+                                Implementing robust security measures and performance optimization strategies 
+                                to ensure maximum efficiency and protection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials" id="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>CLIENT TESTIMONIALS</h2>
+                        <p>What my clients say about working with me</p>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Anania transformed our startup's vision into a scalable platform that now serves thousands of users daily. 
+                                    His technical expertise and attention to detail are unmatched."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Sarah Johnson</h4>
+                                        <p>CEO, TechStart Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Working with Anania was a game-changer for our e-commerce platform. He delivered beyond expectations 
+                                    and helped us achieve a 200% increase in performance."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Michael Chen</h4>
+                                        <p>CTO, ShopFlow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="quote-icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Anania's ability to understand complex requirements and deliver elegant solutions is remarkable. 
+                                    He's not just a developer, he's a problem solver."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Emily Rodriguez</h4>
+                                        <p>Product Manager, DataViz Pro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certifications" id="certifications">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>CERTIFICATIONS & ACHIEVEMENTS</h2>
+                        <p>Continuous learning and professional growth</p>
+                    </div>
+                    <div class="certifications-grid">
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>AWS Certified Developer</h3>
+                            <p>Amazon Web Services</p>
+                            <span class="cert-date">2023</span>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>React Advanced Certification</h3>
+                            <p>Meta (Facebook)</p>
+                            <span class="cert-date">2023</span>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Full Stack Web Development</h3>
+                            <p>freeCodeCamp</p>
+                            <span class="cert-date">2022</span>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3>MongoDB Certified Developer</h3>
+                            <p>MongoDB University</p>
+                            <span class="cert-date">2022</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>ANANIA SILESHI</h3>
+                        <p>Elite Full Stack Developer specializing in creating exceptional digital experiences with precision and innovation.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Portfolio</a></li>
+                            <li><a href="expertise.html">Expertise</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/ananiasileshi" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/ananiasileshi" target="_blank">GitHub</a></li>
+                            <li><a href="https://twitter.com/ananiasileshi" target="_blank">Twitter</a></li>
+                            <li><a href="mailto:anania.sileshi@example.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Anania Sileshi. All rights reserved. | Crafted with precision and passion.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

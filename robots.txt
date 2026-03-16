@@ -1,0 +1,15 @@
+# robots.txt for ananiasileshi.dev
+
+User-agent: *
+Allow: /
+
+# Disallow sensitive files
+Disallow: /private/
+Disallow: /admin/
+Disallow: *.pdf$
+
+# Sitemap
+Sitemap: https://ananiasileshi.dev/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

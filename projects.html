@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Anania Sileshi</title>
+    <meta name="description" content="Portfolio projects by Anania Sileshi - Full Stack Developer">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div id="particles-js"></div>
+    <canvas id="three-canvas"></canvas>
+    <div class="matrix-rain"></div>
+    <div class="cyber-grid"></div>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo holographic">AS</div>
+            <div class="loader-text">INITIALIZING EXCELLENCE</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <header id="header">
+                <a href="index.html" class="logo">Anania Sileshi</a>
+                <nav>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </header>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            <section class="projects" id="projects">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>FEATURED PROJECTS</h2>
+                        <p>Some of my recent work</p>
+                    </div>
+                    <div class="projects-showcase">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-image-placeholder">[Project Image]</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-number">01</div>
+                                <h3 class="project-title">E-Commerce Platform</h3>
+                                <p class="project-description">
+                                    A high-performance e-commerce solution handling millions of transactions with 
+                                    real-time inventory management and AI-powered recommendations.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-image-placeholder">[Project Image]</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-number">02</div>
+                                <h3 class="project-title">Financial Dashboard</h3>
+                                <p class="project-description">
+                                    Real-time financial analytics platform with advanced data visualization and 
+                                    predictive modeling capabilities for institutional investors.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">D3.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-image-placeholder">[Project Image]</div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-number">03</div>
+                                <h3 class="project-title">AI Content Platform</h3>
+                                <p class="project-description">
+                                    Cutting-edge content management system powered by artificial intelligence for 
+                                    automated content generation and optimization.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">OpenAI</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">GraphQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        <span>Live Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        <span>GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>ANANIA SILESHI</h3>
+                        <p>Elite Full Stack Developer specializing in creating exceptional digital experiences with precision and innovation.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="projects.html">Portfolio</a></li>
+                            <li><a href="expertise.html">Expertise</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://linkedin.com/in/ananiasileshi" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/ananiasileshi" target="_blank">GitHub</a></li>
+                            <li><a href="https://twitter.com/ananiasileshi" target="_blank">Twitter</a></li>
+                            <li><a href="mailto:anania.sileshi@example.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Anania Sileshi. All rights reserved. | Crafted with precision and passion.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
