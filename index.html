@@ -180,6 +180,14 @@
             border-color: var(--accent-light);
             background: rgba(0, 128, 255, 0.1);
         }
+        @media (hover: none) and (pointer: coarse) {
+            .cursor, .cursor-follower {
+                display: none;
+            }
+            body {
+                cursor: auto;
+            }
+        }
         #particles-js {
             position: fixed;
             width: 100%;
